@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #1d1d1d;
+    background-image: url(images/backgound_home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #e7e1e1;
+}
+
+
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-size: 16px;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 5px;
+
+}
+.menu a:after{
+   content: "";
+   position: absolute;
+   background-color: #25d162;
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: -10px;
+   transition: 0.3s;
+}
+.menu a:hover{
+    color: #25d162;
+}
+
+ a:hover:after{
+    width: 100%;
+}
+
+header .navbar  ul{
+    list-style: none;
+}
+
+header .navbar  ul li{
+    float: left;
+    position: relative;
+}
+
+header .navbar  ul li a{
+    display: inline-block;
+    padding: 1.2rem 1rem;
+    font-size: 1.2rem;
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+header .navbar  ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #25d162;
+    color: #25d162;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+header .navbar  ul li a:hover{
+    color: #25d162;
+}
+header .navbar  ul li a:hover:after{
+    width: 100%;
+}
+
+
+header .navbar  ul li a i{
+    margin-left: 1rem;
+}
+
+header .navbar  ul li ul{
+    position: absolute;
+    width: 17rem;
+    left: 0;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+}
+
+header .navbar ul li ul li a{
+    display: none;
+}
+
+header .navbar ul li:hover ul li a{
+    display: block;
+}
+.btn,
+.inline-btn{
+   margin-top: 1rem;
+   padding: 1rem 3rem;
+   background-color: #25d162;
+   color: #e7e1e1;
+   cursor: pointer;
+   text-align: center;
+   font-size: 1.2rem;
+   text-transform: capitalize;
+   border-radius: 2rem;
+}
+
+.btn:hover,
+.inline-btn:hover{
+   background-color: #2b2b2b;
+}
+
+.btn{
+   display: block;
+   width: 100%;
+}
+
+.inline-btn{
+   display: inline-block;
+}
+
+.flex-btn{
+   display: flex;
+   gap: .5rem;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+
+
+.form-container form{
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: #25d162;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.form-container form h3{
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #2b2b2b;
+    text-transform: capitalize;
+}
+
+.form-container form .box{
+    border: .1rem solid #25d162;
+    background-color: #2b2b2b;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    color: #25d162;
+    margin: 1rem 0;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.form-container form p{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+.form-container form p a{
+    color: #2b2b2b;
+}
+
+
+

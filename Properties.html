@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="Properties.css">
+    <title>Add a Property</title>
+</head>
+<body>
+   <header>
+    <div class="navbar">
+        <div class="logo">
+           <a href="Home.php">logo</a>
+        </div>
+        <div class="menu">
+            <a href="Properties.php">Properties</a>
+            <a href="#">Add Property</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <ul>
+            <li><a href="#">saved <i class="far fa-heart"></i></a></li>
+            <li><a href="#">account <i class="fas fa-angle-down"></i></a>
+               <ul>
+                  <li><a href="login.html">login</a></li>
+                  <li><a href="register.html">register</a></li>
+               </ul>
+            </li>
+         </ul>
+    </div>
+   </header>
+</div>
+
+
+</div>
+
+    <section  class="filters" style="padding-bottom: 0;">
+
+      <form action="" method="post" id="filter-form">
+         <div id="close-filter"><i class="fas fa-times"></i></div>
+         <h3>filter your search</h3>
+         
+         <div class="flex">
+             <div class="box">
+               <p>location</p>
+                 <select id="location-filter" name="location" class="input" required>
+                     <option value="beirut - hamra street">beirut - hamra street</option>
+                     <option value="beirut DT">beirut</option>
+                     <option value="Achrafieh">Achrafieh</option>
+                 </select>
+             </div>
+             <div class="box">
+                 <p>offer type</p>
+                 <select id="offer-filter" name="offer" class="input" required>
+                     <option value="sale">sale</option>
+                     <option value="resale">resale</option>
+                     <option value="rent">rent</option>
+                 </select>
+             </div>
+             <div class="box">
+                 <p>property type</p>
+                 <select id="type-filter" name="type" class="input" required>
+                     <option value="villa">Villa</option>
+                     <option value="house">House</option>
+                     <option value="challet">Chalet</option>
+                     <option value="appartment">Apartment</option>
+                 </select>
+             </div>
+             <div class="box">
+                 <p>how many BHK</p>
+                 <select id="bhk-filter" name="bhk" class="input" required>
+                     <option value="1">1 BHK</option>
+                     <option value="2">2 BHK</option>
+                     <option value="3">3 BHK</option>
+                     <option value="4">4 BHK</option>
+                     <option value="5">5 BHK</option>
+                     <option value="6">6 BHK</option>
+                     <option value="7">7 BHK</option>
+                     <option value="8">8 BHK</option>
+                     <option value="9">9 BHK</option>
+                 </select>
+             </div>
+             <div class="box">
+                 <p>minimum budget</p>
+                 <select id="min-price-filter" name="minimum" class="input" required>
+                  <option value="1000000">1 mil$</option>
+                  <option value="5000000">5 mil$</option>
+                  <option value="10000000">10 mil$</option>
+                  <option value="15000000">15 mil$</option>
+                  <option value="20000000">20 mil$</option>
+                  <option value="30000000">30 mil$</option>
+                 </select>
+             </div>
+             <div class="box">
+                 <p>maximum budget</p>
+                 <select id="max-price-filter" name="maximum" class="input" required>
+                  <option value="1000000">1 mil$</option>
+                  <option value="5000000">5 mil$</option>
+                  <option value="10000000">10 mil$</option>
+                  <option value="15000000">15 mil$</option>
+                  <option value="20000000">20 mil$</option>
+                  <option value="30000000">30 mil$</option>
+                 </select>
+             </div>
+             <div class="box">
+                 <p>status</p>
+                 <select id="status-filter" name="status" class="input" required>
+                     <option value="ready to move">ready to move</option>
+                     <option value="under construction">under construction</option>
+                 </select>
+             </div>
+             <div class="box">
+                 <p>furnished</p>
+                 <select id="furnished-filter" name="furnished" class="input" required>
+                     <option value="unfurnished">unfurnished</option>
+                     <option value="furnished">furnished</option>
+                     <option value="semi-furnished">semi-furnished</option>
+                 </select>
+             </div>
+         </div>
+         <input type="submit" value="Search Property" name="search" class="btn">
+     </form>
+
+    </section>
+    
+
+
+
+
+    <section class="listings">
+
+        <h1 class="heading">Searched Results</h1>
+     
+        <div class="box-container">
+     
+           <div class="box">
+              <div class="admin">
+                 <h3>logo</h3>
+                 <div>
+                    <p>ia_real_estate</p>
+                    <span>27-11-2024</span>
+                 </div>
+              </div>
+              <div class="thumb">
+                 <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+                 <p class="type"><span>house</span><span>sale</span></p>
+                 <form action="" method="post" class="save">
+                    <button type="submit" name="save" class="far fa-heart"></button>
+                 </form>
+                 <img src="images/7.webp" alt="">
+              </div>
+              <h3 class="name">modern flats and appartments</h3>
+              <p class="location"><i class="fas fa-map-marker-alt"></i><span>beirut- hamra street</span></p>
+              <div class="flex">
+                 <p><i class="fas fa-bed"></i><span>3</span></p>
+                 <p><i class="fas fa-bath"></i><span>2</span></p>
+                 <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+              </div>
+              <a href="view_property.html" class="btn">view property</a>
+           </div>
+     
+           <div class="box" data-location="beirut- hamra street" data-type="house" data-offer="sale" data-bhk="3" data-status="ready to move" data-min-price="1000000" data-max-price="20000000" data-furnished="furnished">
+              <div class="admin">
+                 <h3>logo</h3>
+                 <div>
+                    <p>ia_real_estate</p>
+                    <span>27-11-2024</span>
+                 </div>
+              </div>
+              <div class="thumb">
+                 <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+                 <p class="type"><span>villa</span><span>sale</span></p>
+                 <form action="" method="post" class="save">
+                    <button type="submit" name="save" class="far fa-heart"></button>
+                 </form>
+                 <img src="images/15.webp" alt="">
+              </div>
+              <h3 class="name">modern flats and appartments</h3>
+              <p class="location"><i class="fas fa-map-marker-alt"></i><span>beirut DT</span></p>
+              <div class="flex">
+                 <p><i class="fas fa-bed"></i><span>3</span></p>
+                 <p><i class="fas fa-bath"></i><span>2</span></p>
+                 <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+              </div>
+              <a href="view_property.html" class="btn">view property</a>
+           </div>
+     
+           <div class="box" data-location="beirut- hamra street" data-type="House" data-offer="sale" data-bhk="3" data-status="ready to move" data-min-price="1000000" data-max-price="20000000">
+              <div class="admin">
+                 <h3>logo</h3>
+                 <div>
+                    <p>ia_real_estate</p>
+                    <span>27-11-2024</span>
+                 </div>
+              </div>
+              <div class="thumb">
+                 <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+                 <p class="type"><span>villa</span><span>sale</span></p>
+                 <form action="" method="post" class="save">
+                    <button type="submit" name="save" class="far fa-heart"></button>
+                 </form>
+                 <img src="images/12.webp" alt="">
+              </div>
+              <h3 class="name">modern flats and appartments</h3>
+              <p class="location"><i class="fas fa-map-marker-alt"></i><span>beirut- achrafieh</span></p>
+              <div class="flex">
+                 <p><i class="fas fa-bed"></i><span>3</span></p>
+                 <p><i class="fas fa-bath"></i><span>2</span></p>
+                 <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+              </div>
+              <a href="view_property.html" class="btn">view property</a>
+           </div>
+
+           <div class="box" 
+     data-location="beirut - hamra street" 
+     data-offer="sale" 
+     data-type="villa" 
+     data-bhk="3" 
+     data-status="ready to move" 
+     data-furnished="furnished" 
+     data-min-price="1000000" 
+     data-max-price="20000000">
+            <div class="admin">
+               <h3>logo</h3>
+               <div>
+                  <p>ia_real_estate</p>
+                  <span>27-11-2024</span>
+               </div>
+            </div>
+            <div class="thumb">
+               <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+               <p class="type"><span>house</span><span>sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="far fa-heart"></button>
+               </form>
+               <img src="images/11.jpg" alt="">
+            </div>
+            <h3 class="name">modern flats and appartments</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>beirut- hamra street</span></p>
+            <div class="flex">
+               <p><i class="fas fa-bed"></i><span>3</span></p>
+               <p><i class="fas fa-bath"></i><span>2</span></p>
+               <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+            </div>
+            <a href="view_property.html" class="btn">view property</a>
+         </div>
+
+         <div class="box" data-location="beirut- hamra street" data-type="Villa" data-offer="sale" data-bhk="3" data-status="ready to move" data-min-price="1000000" data-max-price="20000000">
+            <div class="admin">
+               <h3>logo</h3>
+               <div>
+                  <p>ia_real_estate</p>
+                  <span>27-11-2024</span>
+               </div>
+            </div>
+            <div class="thumb">
+               <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+               <p class="type"><span>house</span><span>sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="far fa-heart"></button>
+               </form>
+               <img src="images/9.webp" alt="">
+            </div>
+            <h3 class="name">modern flats and appartments</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>beirut- hamra street</span></p>
+            <div class="flex">
+               <p><i class="fas fa-bed"></i><span>3</span></p>
+               <p><i class="fas fa-bath"></i><span>2</span></p>
+               <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+            </div>
+            <a href="view_property.html" class="btn">view property</a>
+         </div>
+
+         <div class="box" data-location="beirut- hamra street" data-type="House" data-offer="sale" data-bhk="3" data-status="ready to move"  data-max-price="20000000" data-furnished="furnished">
+            <div class="admin">
+               <h3>logo</h3>
+               <div>
+                  <p>ia_real_estate</p>
+                  <span>27-11-2024</span>
+               </div>
+            </div>
+            <div class="thumb">
+               <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+               <p class="type"><span>house</span><span>sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="far fa-heart"></button>
+               </form>
+               <img src="images/5.webp" alt="">
+            </div>
+            <h3 class="name">modern flats and appartments</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>beirut- hamra street</span></p>
+            <div class="flex">
+               <p><i class="fas fa-bed"></i><span>3</span></p>
+               <p><i class="fas fa-bath"></i><span>2</span></p>
+               <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+            </div>
+            <a href="view_property.html" class="btn">view property</a>
+         </div>
+     
+        </div>
+
+     </section>
+
+     <script>
+      document.getElementById("filter-form").addEventListener("submit", function (e) {
+          e.preventDefault(); 
+      
+          const locationFilter = document.getElementById("location-filter").value.toLowerCase();
+          const offerFilter = document.getElementById("offer-filter").value.toLowerCase();
+          const typeFilter = document.getElementById("type-filter").value.toLowerCase();
+          const bhkFilter = document.getElementById("bhk-filter").value;
+          const statusFilter = document.getElementById("status-filter").value.toLowerCase();
+          const furnishedFilter = document.getElementById("furnished-filter").value.toLowerCase();
+          const minPriceFilter = parseInt(document.getElementById("min-price-filter").value);
+          const maxPriceFilter = parseInt(document.getElementById("max-price-filter").value);
+      
+         
+          const propertyBoxes = document.querySelectorAll(".box-container .box");
+      
+         
+          propertyBoxes.forEach((box) => {
+              const location = box.dataset.location?.toLowerCase() || "";
+              const offer = box.dataset.offer?.toLowerCase() || "";
+              const type = box.dataset.type?.toLowerCase() || "";
+              const bhk = box.dataset.bhk || "";
+              const status = box.dataset.status?.toLowerCase() || "";
+              const furnished = box.dataset.furnished?.toLowerCase() || "";
+              const minPrice = parseInt(box.dataset.minPrice) || 0;
+              const maxPrice = parseInt(box.dataset.maxPrice) || Infinity;
+      
+         
+              const matchesLocation = location.includes(locationFilter);
+              const matchesOffer = offer === offerFilter;
+              const matchesType = type === typeFilter;
+              const matchesBhk = bhk === bhkFilter;
+              const matchesStatus = status === statusFilter;
+              const matchesFurnished = furnished === furnishedFilter;
+              const matchesPrice = minPrice >= minPriceFilter && maxPrice <= maxPriceFilter;
+      
+              if (matchesLocation && matchesOffer && matchesType && matchesBhk && matchesStatus && matchesFurnished && matchesPrice) {
+                  box.style.display = "block";
+              } else {
+                  box.style.display = "none";
+              }
+          });
+      });
+
+      </script>
+</body>
+</html>
